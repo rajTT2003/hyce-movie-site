@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Movie</title>
+    <link rel="stylesheet" href="playPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section id="navigationSection">
+        <div class="logoContainer">
+            <h2 class="logo"><i class="fa-solid fa-cube" ></i> HYCE</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Home</li>
+                <li><i class="fa-solid fa-clapperboard"></i> Movie</li>
+                <li class="test"><i class="fa-solid fa-film"></i> Series</li>
+            </ul>
+        </nav>
+        <div class="filterBox">
+            <div class="filterContainer">
+                <i class="fa-solid fa-filter"></i>
+                <input class="search" type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="searchSuggestionContainer">
+                <ul id="searchSuggestions"style="display: none;">
+
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section id="videoSection">
+        <div class="playerContainer">
+            <video width="100%" height="100%" controls>
+                <source src="Valiant - Bubble Gum _ Music Video (Dutty Money Riddim).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>  
+        </div>
+              
+    </section>
+    <section id="DetailSection">
+        <div class="serverContainer">
+        </div>
+        <div class="DetailContainer">
+            <div class="imgContainer">
+                <img src="poster.jpg" alt="posterImg">
+            </div>
+            <div class="infoContainer">
+                <div class="titleContainer"><h2>TITLE</h2></div>
+                <div class="infoContainer2">
+                    <div class="ratingContainer"><h4>rating</h4></div>
+                    <div class="releaseDateContainer"><h4>2020-01-02</h4></div>
+                    <div class="categoryCcntainer"><h4>Action | Action | Action</h4></div>
+                </div>
+                <div class="descriptionContainer"><h5>LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+                </h5></div>
+            </div>
+            <div class="fileContainer"></div>
+        </div>
+    </section>
+
+    <script src="playPage.js"></script>
+</body>
+</html>

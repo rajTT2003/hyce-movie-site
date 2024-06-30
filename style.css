@@ -1,0 +1,543 @@
+body{
+    background-color: darkblue;
+    margin: 0;
+    font-family: 'Concert One', sans-serif;
+    color: whitesmoke;
+    
+}
+/* For Chrome */
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+    background-color: darkblue;
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: skyblue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: skyblue;
+}
+
+
+/*Navigation */
+#navigationSection{
+    width: 100%;
+    min-height: 10vh;
+    background-color: blue;
+    display: flex;
+    border-bottom: 1px solid blue;
+    
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.logoContainer{
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+.logo{
+    flex-grow: 1;
+    flex-grow: 0;
+    display: flex;
+    font-family: 'Rubik Wet Paint', sans-serif;
+    letter-spacing: 5px;
+    color: whitesmoke;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    margin-right: 5vw;
+}
+
+.filterBox{
+    margin-top: 15px;
+    margin-right: 50px;
+    margin-left: -240px;
+}
+.filterContainer{
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: darkblue;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.search{
+    height: 100%;
+    width: 65%;
+    margin-top: 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.search:focus{
+    outline: none;
+}
+.search::placeholder{
+    color: blue;
+    font-size: 17px;
+    font-weight: bold;
+}
+.fa-filter,.fa-magnifying-glass{
+    margin: 8px;
+    color: blue;
+    font-size: 20px;
+}
+.fa-magnifying-glass{
+    margin-right: 5px !important;
+}
+
+.searchSuggestionContainer{
+    height: auto;
+    width: 280px;
+    border-radius: 10px;
+    background-color: darkblue;
+    position: absolute;
+}
+#searchSuggestions li{
+    background-color: blue;
+    width: 97%;
+    margin-bottom: 5px;
+    display: flex;
+    height: 60px;
+    border-radius: 10px;
+}
+#searchSuggestions li a {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Vertical centering */
+}
+#searchSuggestions li a:hover{
+    border-radius: 10px;
+    box-shadow:  0px 0px 5px 2px skyblue;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+#searchSuggestions {
+    margin-left: -30px;
+}
+#searcgSuggestions {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+/*End of Navigation */
+
+
+
+#showcaseSection{
+    height: 90vh;
+    width: 100%;
+}
+#showcaseContainer{
+    display: flex ;
+    align-items: center;
+    justify-content: center ;
+    margin-top: 10px;
+}
+.bigShowcaseContainer{
+    width: 45%;
+    height: 85vh;
+    background-color: blue;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+    border: skyblue 2px solid;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.smallShowcaseContainer{
+    width: 45%;
+    height: auto;
+    margin-right: 30px;
+}
+.showCase1, .showCase2, .showCase3{
+    width: 100%;
+    height: 27vh;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    background-color: blue;
+    border-radius: 15px;
+    border: skyblue 2px solid;
+    overflow: hidden ;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.posterContainer1 {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: block;
+    overflow: hidden;
+    border-top-right-radius: 14.2px;
+    border-top-left-radius: 14.2px;
+
+}
+
+#poster-image{
+    object-fit:cover; 
+    width: 100%;
+    height: 100%;
+   object-position: top;
+}
+#quality1{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-right: 25px;
+}
+#quality1 h5{
+    background-color: darkblue;
+    color: skyblue;
+    padding: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+#genre1{
+    position: absolute;
+    z-index: 2;
+}
+
+.bigShowcaseContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 255, .0) 0%, rgba(0, 0, 255, 1)70%);
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+.movieDetails1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 90px;
+    z-index: 2;
+}
+.titleContainer1{
+    z-index: 2;
+}
+.titleContainer1 h2{
+    font-size: 2.8vw;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+.subDetails1{
+    display: flex;
+    margin-top: 0;
+}
+
+#rating1{
+    margin-top: 0;
+}
+
+#rating1, #releaseDate1, #runtime1, #quality1, #genre1,#description1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+    margin-left: 10px;
+}
+
+.subDetails1 h5{
+    margin-top: 5px;
+}
+#description1{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-top: 20px;
+    color: skyblue;
+    padding-right: 20px;
+}
+
+#posterContainer2{
+    width: 30%;
+    position: relative;
+}
+#poster-image2{
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+}
+#quality2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#quality2 h5{
+    background-color: darkblue;
+    color: skyblue;
+    padding: 0;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.movieDetails2{
+    overflow: hidden ;
+}
+.titleContainer2 h2{
+    font-size: 2vw;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.subDetails2{
+    display: flex;
+    margin-top: 0;
+
+}
+.subDetails2 h5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#rating2, #releaseDate2, #runtime2, #quality2, #genre2,#description2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
+    margin-left: 10px;
+}
+#genre2 h5{
+    margin-top: 5px;
+    margin-bottom: 0
+}
+#description2{
+    margin-top: 0;
+    position: absolute;
+    margin-top: 8px;
+    color: skyblue;
+    padding-right: 50px;
+}
+#description2 h5{
+    text-wrap: wrap;
+    margin-top: 0;
+}
+
+
+
+
+
+
+#recommendationSection{
+    background-color: blue;
+    width: 98%;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+
+.headerContainer h2{
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.buttonContainer{
+    background-color: darkblue;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+.switcherContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movieButton,
+#seriesButton {
+    font-size: 13px;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: transparent; /* Set the default background color */
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button-transition {
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+#movieButton:hover, #seriesButton:hover{  
+    font-size: 13px;
+}
+
+/* Style for the active button */
+#movieButton.active, #seriesButton.active {
+    background-color: blue;
+    color: white;
+}
+
+
+#movieButton, #seriesButton {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#seriesButton{
+    background-color: transparent;
+}
+
+.mainRecommendation{
+    width: 76%;
+}
+.movieContainer, .seriesContainer{
+    flex-wrap: wrap;
+    display: flex;
+    height: auto;
+}
+.movieContainer {
+    display: flex; 
+}
+
+.seriesContainer {
+    display: none;
+}
+
+#movie, #series{
+    width: 180px;
+    height: 45vh;
+    background-color: darkblue;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid skyblue;
+    cursor: pointer;
+}
+#movie:hover, #series:hover, .bigShowcaseContainer:hover, .showCase1:hover,.showCase2:hover,.showCase3:hover, #upcomingMovie:hover, #updatedSeries:hover {
+    box-shadow:  0px 0px 5px 2px skyblue;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+.movieImg, .seriesImg{
+    width:100%;
+    height: 35vh;
+    border-radius: 10px;
+    border-bottom: 1px solid skyblue;
+}
+#movie .movieImg img, #series .seriesImg img  {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 0;
+  }
+.movieTitle h2, .seriesTitle h2{
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movieDetails3, .seriesDetails3{
+    display:  flex;
+    color: blue;
+}
+.movieDetails3 p, .seriesDetails3 p{
+    margin-top: 5px;
+}
+.type{
+    margin-left: 30px;
+}
+.year{
+    margin-left: 10px;
+}
+.runtime3{
+    margin-left: 5px;
+}
+
+#movie hr, #series hr{
+    margin-bottom: 0;
+}
+
+.theContents{
+    display: flex;
+}
+.updateContainers{
+    background-color: darkblue;
+    width: 23%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.upcomingHeader1 h2, .updateHeader1 h2{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#upcomingMovie, #updatedSeries{
+    width: 90%;
+    height: 10vh;
+    background-color: blue;
+    border-radius: 10px;
+    border: 1px solid skyblue;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 10px;
+}
+.posterContainer3{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.posterContainer3 img{
+    width: 100%;
+    object-fit: cover;
+}
+.titleContainer3 h2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    margin-top: 2px;
+    margin-bottom:  5px;
+}
+.movieDetails4, .seriesDetails{
+    width: 70%;
+    padding-left: 5px;
+}
